@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="../css/style1.css">
+        
+    <!-- ===== Boxicons CSS ===== -->
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
+    
+    <!-- ===== Google Font Import - Poppins ===== -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- ===== Swiper CSS ===== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    
+    <title>Responsive Navigation Menu Bar with Profile Slider</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-bar">
+            <i class='bx bx-menu sidebarOpen' ></i>
+            <span class="logo navLogo"><a href="#">Olfactory Engineers</a></span>
+            <div class="menu">
+                <div class="logo-toggle">
+                    <span class="logo"><a href="#">Olfactory Engineers</a></span>
+                    <i class='bx bx-x siderbarClose'></i>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="profile1.html">Profile 1</a></li>
+                    <li><a href="profile2.html">Profile 2</a></li>
+                    <li><a href="profile3.html">Profile 3</a></li>
+                    <li><a href="profile4.html">Profile 4</a></li>
+                </ul>
+            </div>
+            <div class="darkLight-searchBox">
+                <div class="dark-light">
+                    <i class='bx bx-moon moon'></i>
+                    <i class='bx bx-sun sun'></i>
+                </div>
+                <div class="searchBox">
+                   <div class="searchToggle">
+                    <i class='bx bx-x cancel'></i>
+                    <i class='bx bx-search search'></i>
+                   </div>
+                    <div class="search-field">
+                        <input type="text" placeholder="Search...">
+                        <i class='bx bx-search'></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="main-card">
+          <div class="cards">
+            <div class="card">
+             <div class="content">
+               <div class="img">
+                <img src="../images/img1.jpg" alt="">
+               </div>
+               <div class="details">
+                 <div class="name">Steven Gerald Marlent</div>
+                 <div class="job">Software engineer</div>
+               </div>
+                <div class="star-group" data-rating-id="rating1">
+                    <input type="radio" class="star" id="one" name="star_rating1">
+                    <input type="radio" class="star" id="two" name="star_rating1">
+                    <input type="radio" class="star" id="three" name="star_rating1">
+                    <input type="radio" class="star" id="four" name="star_rating1">
+                    <input type="radio" class="star" id="five" name="star_rating1" checked="">
+                </div>
+                <div class="rating-message" id="rating1">Thank you for your rating!</div>
+             </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script src="../js/script.js"></script>
+
+</body>
+</html>
